@@ -12,7 +12,7 @@ model in a set of source folders you specify.
 
 ## Configuration
 
-Place the following block inside `server/component-config.json`:
+Place the following block at the very top of `server/component-config.json`:
 
 ```
 "loopback-component-model-fragments": {
@@ -22,8 +22,9 @@ Place the following block inside `server/component-config.json`:
   ]
 }
 ```
-
-Note: It's important and necessary that you specify your model source paths in the component config.
+Two important notes:
+- You must put this configuration **above the explorer component**, or any routes from your models won't appear in the explorer.
+- It's important and necessary that you specify your model source paths in the component config. (Sorry, at the time being it does not auto-detect paths)
 
 ## How it works
 
