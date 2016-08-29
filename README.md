@@ -39,6 +39,8 @@ configuration above, the component will attempt to recursively load the followin
 
 Each script that it loads is expected to export a single function which takes an `app` handle as a parameter. In this way these files exactly match the behavior of Loopback's normal script file (i.e. `media-report.js`).
 
+**Regarding app path**: This module uses [app-root-path](https://github.com/inxilpro/node-app-root-path) to determine project root. It then reads package.json from the project root to locate the main server script. If you need to customize the project root folder, use env-var `APP_ROOT_PATH`.
+
 ## Best practices
 
 This component will help you build cleaner, more maintainable Loopback model code by breaking down very large model files into descriptive fragments. For example we often structure our model fragments similar to the following,
