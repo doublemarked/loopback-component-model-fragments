@@ -1,6 +1,6 @@
 {
   "name": "loopback-component-model-fragments",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Fragment your Loopback models into bite-sized pieces",
   "main": "lib/model-fragments.js",
   "scripts": {
